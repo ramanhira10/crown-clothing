@@ -1,0 +1,5 @@
+yarn
+
+yarn start
+
+git remote add origin <ssh/https>
