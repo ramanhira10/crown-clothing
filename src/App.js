@@ -3,24 +3,29 @@ import './App.css';
 
 import {Switch, Route} from 'react-router-dom';
 
+import Header from './components/header/header.component';
 import HomePage from './pages/homepage/homepage.component';
 import ShopPage from './pages/shop/shop.component';
 
 
 function App() {
   return (
-    <Switch>
-      <Route
-        path='/'
-        exact={true}
-        component={HomePage}
-      />
-      <Route
-        path='/shop'
-        exact={true}
-        component={ShopPage}
-      />
-    </Switch>
+    <div>
+      <Header />
+      <Switch>
+        <Route
+          path='/'
+          exact={true}
+          component={HomePage}
+        />
+        <Route
+          path='/shop'
+          exact={true}
+          component={ShopPage}
+        />
+      </Switch>
+    </div>
+    
   );
 }
 
