@@ -4,10 +4,8 @@ import './App.css';
 import {Switch, Route} from 'react-router-dom';
 
 import HomePage from './pages/homepage/homepage.component';
+import ShopPage from './pages/shop/shop.component';
 
-const HatsPage = () => (
-  <div>HATS PAGE</div>
-);
 
 function App() {
   return (
@@ -18,9 +16,9 @@ function App() {
         component={HomePage}
       />
       <Route
-        path='/hats'
+        path='/shop'
         exact={true}
-        component={HatsPage}
+        component={ShopPage}
       />
     </Switch>
   );
